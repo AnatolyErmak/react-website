@@ -7,7 +7,11 @@ import {
   Switch
 } from 'react-router-dom'
 import Home from './components/pages/HomePage/Home'
+import Services from './components/pages/Services/Services'
+import products from './components/pages/Products/Products'
+import SignUp from './components/pages/SignUp/SignUp'
 import Footer from './components/pages/Footer/Footer'
+
 
 
 function App() {
@@ -16,6 +20,9 @@ function App() {
     <Navbar />
     <Switch >
     <Route path = '/' exact component = { Home}/> 
+		<Route path = '/services' exact component = { Services}/> 
+		<Route path = '/products' exact component = { products}/> 
+		<Route path = '/sign-up' exact component = { SignUp}/> 
     </Switch> 
 		<Footer />
     </Router>
